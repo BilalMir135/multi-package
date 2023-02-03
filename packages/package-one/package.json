@@ -1,0 +1,22 @@
+{
+    "name": "@bilalmir135/package-one",
+    "author": "BilalMir135 <bilalmir135@gmail.com>",
+    "license": "MIT",
+    "repository": "github:BilalMir135/multi-package",
+    "publishConfig": {
+      "access": "public"
+    },
+    "version": "0.1.0",
+    "files": [
+      "dist/*"
+    ],
+    "type": "commonjs",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "exports": "./dist/index.js",
+    "scripts": {
+      "prebuild": "rm -rf dist",
+      "build": "tsc",
+      "start": "tsc --watch"
+    }  
+  }
